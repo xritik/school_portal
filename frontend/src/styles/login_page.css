@@ -35,6 +35,13 @@
     border-radius: 30px;
     box-shadow: 0px 0px 35px -20px;
 }
+.alertMessage{
+    position: fixed;
+    text-align: center;
+    color: red;
+    font-size: 13.5px;
+    margin-top: -15px;
+}
 .loginForm{
     display: flex;
     flex-direction: column;
@@ -43,7 +50,7 @@
 .loginFormLabel{
     font-size: 12px;
 }
-.loginForm input{
+.loginForm input, .passfield{
     width: 95%;
     height: 33px;
     border-radius: 3px;
