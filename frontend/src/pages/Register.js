@@ -4,7 +4,7 @@ import boy from '../assets/school_boy.png';
 import Navbar from '../components/Navbar';
 import { Link } from 'react-router-dom';
 
-const Login = () => {
+const Register = () => {
   const [captcha, setCaptcha] = useState(null);
   const [filledCaptcha, setFilledCaptcha] = useState(null);
   const [showPassword, setShowPassword] = useState(false);
@@ -25,7 +25,7 @@ const Login = () => {
       setMessage('Captcha is incorrect. Please try again.');
     }
   }
-
+  
   return (
     <div className='loginSection'>
       <Navbar/>
@@ -35,7 +35,7 @@ const Login = () => {
             {message &&
               <p className='alertMessage'>{message}</p>
             }
-            <h2>Login</h2>
+            <h2>Register</h2>
             <form className='loginForm' onSubmit={handleSubmit}> 
               <div style={{display:'inline-grid'}}>
                 <label className='loginFormLabel'>Email</label>
@@ -64,8 +64,8 @@ const Login = () => {
                   </div>
                 </div>
               </div>
-              <button>Login</button>
-              <div style={{fontSize:'12px', textAlign:'center'}}>Don't have an account? <Link to={'/register'}>Register here</Link></div>
+              <button>Register</button>
+              <div style={{fontSize:'12px', textAlign:'center'}}>Already have an account? <Link to={'/login'}>Login here</Link></div>
             </form>
           </div>
         </div>
@@ -77,4 +77,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default Register
