@@ -25,7 +25,7 @@ const Login = () => {
       setMessage('Captcha is incorrect. Please try again.');
       setTimeout(() => {
         setMessage('');
-      }, 5000);
+      }, 5555);
     }
   }
 

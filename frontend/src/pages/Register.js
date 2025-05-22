@@ -25,7 +25,7 @@ const Register = () => {
       setMessage('Captcha is incorrect. Please try again.');
       setInterval(() => {
         setMessage('');
-      }, 5000);
+      }, 5555);
     }
   }
   
